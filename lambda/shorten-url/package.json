@@ -1,0 +1,9 @@
+{
+  "name": "shorten-url",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.1350.0",
+    "crypto": "^1.0.1"
+  }
+}
