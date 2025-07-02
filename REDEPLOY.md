@@ -1,9 +1,9 @@
-🔁 REDEPLOY: Serverless AWS URL Shortener
+# 🔁 REDEPLOY: Serverless AWS URL Shortener
 
 This document provides a step-by-step guide to redeploy the serverless URL shortener project on AWS using Terraform. Follow this process if the infrastructure was previously destroyed using `terraform destroy` or if you're setting up on a new environment.
 
 
-📦 Prerequisites
+## 📦 Prerequisites
 
 Ensure the following tools are installed and configured:
 
@@ -15,9 +15,9 @@ Ensure the following tools are installed and configured:
 
 ---
 
-🚀 Step-by-Step Redeployment
+## 🚀 Step-by-Step Redeployment
 
-1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository
 
 If you don't already have the code locally:
 
