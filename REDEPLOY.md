@@ -21,33 +21,32 @@ Ensure the following tools are installed and configured:
 
 If you don't already have the code locally:
 
-```bash
 git clone https://github.com/KumarAnuragg/serverless-aws-url-shortner.git
 cd serverless-aws-url-shortner
 
 
-2️⃣ Prepare the Lambda Functions
+### 2️⃣ Prepare the Lambda Functions
 
-🔹 Shorten URL Lambda
+#### 🔹 Shorten URL Lambda
 
 cd lambda/shorten-url
 npm install
 zip -r shorten-url.zip .
 
 
-🔹 Redirect URL Lambda
+#### 🔹 Redirect URL Lambda
 
 cd ../redirect-url
 npm install
 zip -r redirect-url.zip .
 
 
-4️⃣ Apply Terraform Configuration
+### 4️⃣ Apply Terraform Configuration
 
 terraform apply
 
 
-5️⃣ Upload Lambda Zip Files (if required manually)
+### 5️⃣ Upload Lambda Zip Files (if required manually)
 If Terraform doesn’t upload the .zip files automatically:
 
 Go to AWS Lambda Console
@@ -57,7 +56,7 @@ Locate each function (shorten-url and redirect-url)
 Click Upload from → .zip file and choose the correct .zip
 
 
-6️⃣ Test the Shortener API
+### 6️⃣ Test the Shortener API
 Use curl to generate a short URL:
 
 
@@ -66,7 +65,7 @@ curl -X POST https://<api-id>.execute-api.<region>.amazonaws.com/prod/shorten \
   -d '{"url":"https://example.com"}'
 
 
-🧼 Cleanup (Optional)
+## 🧼 Cleanup (Optional)
 
 To remove all AWS resources and avoid charges:
 
@@ -75,7 +74,7 @@ terraform destroy
 
 
 
-🛠 Troubleshooting Tips
+## 🛠 Troubleshooting Tips
 
 ".terraform/" is excluded via .gitignore to prevent large file issues
 
@@ -86,7 +85,7 @@ git rm -r --cached .terraform/
 (If permissions error in Lambda, ensure the IAM roles were correctly created and attached)
 
 
-Conclusion
+### Conclusion
 
 This serverless URL shortener provides an efficient way to shorten and manage URLs using AWS services. By following the setup instructions and troubleshooting common errors, you can successfully deploy and run this project.
 
