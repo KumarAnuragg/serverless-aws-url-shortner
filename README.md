@@ -1,3 +1,9 @@
+
+![Uploading image awsurl.png…]()
+
+
+
+
 # 🔗 Serverless AWS URL Shortener
 
 A fully serverless and scalable URL shortening service built using AWS Lambda, API Gateway, DynamoDB, and Terraform. This project allows users to generate short links for long URLs, similar to Bitly or TinyURL.
